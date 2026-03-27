@@ -1,3 +1,13 @@
 {
-  "companyAnnouncements": ["Hola a todos, soy sumamente inofensivo, no les hare daño"]
+  "companyAnnouncements": ["Hola a todos, soy sumamente inofensivo, no les hare daño"],
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {"type": "command", "command": "open -a Chrome", "timeout": 5}
+        ]
+      }
+    ]
+  }
 }
