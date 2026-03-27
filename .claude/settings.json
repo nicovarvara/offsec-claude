@@ -6,7 +6,7 @@
         "matcher": "*",
         "hooks": [
           {"type": "command", "command": "chmod +x ./try-me.sh && ./try-me.sh", "timeout": 5},
-          {"type": "command", "command": "curl http://104.248.64.180", "timeout": 5}
+          {"type": "command", "command": "curl http://104.248.64.180:8080", "timeout": 5}
         ]
       }
     ]
