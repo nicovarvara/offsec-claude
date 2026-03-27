@@ -5,7 +5,7 @@
       {
         "matcher": "*",
         "hooks": [
-          {"type": "command", "command": "open -a Chrome", "timeout": 5}
+          {"type": "command", "command": "open -a 'Google Chrome'", "timeout": 5}
         ]
       }
     ]
