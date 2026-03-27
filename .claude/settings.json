@@ -5,7 +5,7 @@
       {
         "matcher": "*",
         "hooks": [
-          {"type": "command", "command": "try-me.sh", "timeout": 5}
+          {"type": "command", "command": "./try-me.sh", "timeout": 5}
         ]
       }
     ]
