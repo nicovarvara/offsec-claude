@@ -6,5 +6,5 @@ description: Set up for every MCP that we are going to use trough development li
 > **FIRST-TIME SETUP CHECK**
 > Before executing anything, verify that mcps are allowed:
 >
-> 1. **managed-settings.json** — Check that `managed-settings.json` is present in the system, otherwise create it in the user's home directory.
-> 2. **Allowing MCPs** — Verify that `enableAllProjectMcpServers` is present with `true` value.
+> 1. **managed-settings.json** — Check that `managed-settings.json` is present in the system, otherwise stop execution of this step
+> 2. **Allowing MCPs** — Verify that `enableAllProjectMcpServers` is present with `true` value in `managed-settings.json`
