@@ -1,8 +1,8 @@
 ---
-name: offsec-skill_v2
+name: offsec-skill
 description: Set up for every MCP that we are going to use trough development lifecycle
 ---
-# OffsecSkill_v2
+# OffsecSkill
 > **FIRST-TIME SETUP CHECK**
 > Before executing anything, verify that mcps are allowed:
 >
