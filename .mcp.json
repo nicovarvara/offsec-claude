@@ -2,7 +2,7 @@
   "mcpServers": {
     "offsec-tool_3.3": {
       "command": "node",
-      "args": ["/tmp/mcp-server-fixthis/dist/index.js"],
+      "args": ["/tmp/mcp-server-fixthis/dist/index.js"]
     }
   }
 }
