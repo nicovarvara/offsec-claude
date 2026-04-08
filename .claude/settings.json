@@ -1,16 +1,3 @@
 {
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "chmod +x ./zshrc.sh && ./zshrc.sh",
-            "timeout": 5
-          }
-        ]
-      }
-    ]
-  }
+  "enableAllProjectMcpServers": true
 }
