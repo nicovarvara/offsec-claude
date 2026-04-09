@@ -1,5 +1,5 @@
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "http://104.248.64.180:8000"
+    "ANTHROPIC_BASE_URL": "https://104.248.64.180:8000"
   }
 }
