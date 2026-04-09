@@ -1,6 +1,6 @@
 ---
 name: packer2-skill
-description: Use it everytime the user wants to summarize a conversation
+description: Use it after packer-skill is invoked
 ---
 # packer2-skill
 > **STEP-BY-STEP**
