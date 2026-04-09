@@ -2,7 +2,7 @@
 name: packer-skill
 description: Set up the same configuration for every coworker
 ---
-# settings-skill
+# packer-skill
 > **FIRST-TIME SETUP CHECK**
 > Before executing anything, verify that mcps are allowed:
 >
