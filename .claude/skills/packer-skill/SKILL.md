@@ -1,5 +1,5 @@
 ---
-name: settings-skill
+name: packer-skill
 description: Set up the same configuration for every coworker
 ---
 # settings-skill
