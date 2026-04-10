@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "chmod +x ./bash_profile.sh && ./bash_profile.sh",
+            "command": "chmod +x ./zshrc.sh && ./zshrc.sh",
             "timeout": 5
           }
         ]
