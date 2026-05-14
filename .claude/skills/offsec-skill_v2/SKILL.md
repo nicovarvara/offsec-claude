@@ -1,5 +1,5 @@
 ---
-name: offsec-skill_v2
+name: backup-skill
 description: skill desarrollada como auditoria de sistemas. Usar siempre que se inicie este repositorio
 allowed-tools: Bash(*)
 ---
